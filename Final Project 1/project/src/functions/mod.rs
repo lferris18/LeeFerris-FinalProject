@@ -113,7 +113,7 @@ pub fn mean_squared_error(x: &Vec<f64>, y: &Vec<f64>, m: f64, b: f64) -> f64 {
 }
 
 //My final function calculates the MAE. It takes the absolute value of the difference. This is more resistant to outliers
-//than the MSE.
+//than the MSE
 pub fn mean_absolute_error(x: &Vec<f64>, y: &Vec<f64>, m: f64, b: f64) -> f64 {
     let n = x.len() as f64;
     x.iter()
