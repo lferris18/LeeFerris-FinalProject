@@ -102,7 +102,7 @@ pub fn coefficient_of_determination(x: &Vec<f64>, y: &Vec<f64>, m: f64, b: f64) 
 //my next function calculates the MSE, which evaluates the accuracy of the linear regression.
 //It is calculated through a closure that iterates over the data points and calculates the squared
 //difference in the predicted value and the actual value. If the result is low, then there is little error, 
-//if it is high, then there is lots of error.
+//if it is high, then there is lots of error
 pub fn mean_squared_error(x: &Vec<f64>, y: &Vec<f64>, m: f64, b: f64) -> f64 {
     let n = x.len() as f64;
     x.iter()
